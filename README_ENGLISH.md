@@ -44,7 +44,7 @@ void clear()
 ---
 io.h
 
-cin,cout can be input and output.
+cin,cout can be input and output:
 ```cpp
 short,int,long long
 unsigned short,unsigned int,unsigned long long
@@ -52,10 +52,12 @@ float,double,long double
 char,char*
 ```
 cout retains decimals to 6 digits by default.
-cout<<fix(x); cout<<fix(x); cout<<fix(x)
-cout<<fix(x);
+
+use
+```cpp
+cout<<fix(x); 
 ```
-Change
+to Change
 
 ---
 algorithm.h only swap
