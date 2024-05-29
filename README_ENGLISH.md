@@ -1,8 +1,8 @@
 ## lyhheader
 Use
-```cpp''
+```cpp
 #include "lyh.h"
-using namespace lyh.
+using namespace lyh;
 ```
 to use the header file
 
@@ -24,16 +24,16 @@ void clear()
 iterator
 iterator & begin()
 iterator & end()
-``
+```
 ---
 priority_queue.h
 Using priority_queue
-`` cpp
+``` cpp
 Bigger root heap: priority_queue<typename,vector<typename>,use_bigger_root> q;
 Small root heap: priority_queue<typename,vector<typename>,use_lower_root> q;
-``
+```
 Priority_queue function and pointer (requires overloading of the greater-than operator):.
-``cpp
+```cpp
 void push(tn x)
 tn top()
 bool pop()
@@ -63,12 +63,12 @@ to Change
 algorithm.h only swap
 ```cpp
 void swap(a,b)
-``
+```
 ---
 math.h
 
 Functions
-``cpp
+```cpp
 double & abs(double a) absolute value
 double & floor(double a) round down to the nearest whole number
 int d_intpow(int a,int n,int mod=0) recursive int integer power (mod is modulus, do not need modulus when not filled, the same below)
@@ -77,6 +77,6 @@ unsigned int d_uipow(unsigned int a,unsigned int n) recursive unsigned int integ
 unsigned long long d_ullpow(unsigned long long a,unsigned long long n) recursive unsigned long long powers of integers
 long long zpow(long long a,long long n,long long mod=0) Simplified long long powers
 unsigned long long uzpow(unsigned long long a,unsigned long long n) simplified version unsigned long long power
-``
+```
 
 Translated with DeepL.com (free version)
