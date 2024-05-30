@@ -78,5 +78,20 @@ unsigned long long d_ullpow(unsigned long long a,unsigned long long n) recursive
 long long zpow(long long a,long long n,long long mod=0) Simplified long long powers
 unsigned long long uzpow(unsigned long long a,unsigned long long n) simplified version unsigned long long power
 ```
-
+---
+array.h
+Fixed-Length Arrays
+The array of fixed-length arrays is created using the
+```cpp
+array<typename,size> v;
+```
+array functions and pointers.
+```cpp
+tn & operator [](unsigned long long i)
+void push_back(tn x)
+void pop()
+unsigned long long size()
+void clear()
+void clear_val()
+```
 Translated with DeepL.com (free version)

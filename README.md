@@ -76,3 +76,19 @@ unsigned long long d_ullpow(unsigned long long a,unsigned long long n) 递归 un
 long long zpow(long long a,long long n,long long mod=0) 简化版 long long 幂
 unsigned long long uzpow(unsigned long long a,unsigned long long n) 简化版 unsigned long long 幂
 ```
+---
+array.h
+定长数组
+使用
+```cpp
+array<typename,size> v;
+```
+array函数及指针:
+```cpp
+tn & operator [](unsigned long long i)
+void push_back(tn x)
+void pop()
+unsigned long long size()
+void clear()
+void clear_val()
+```
