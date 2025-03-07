@@ -29,8 +29,8 @@ iterator & end()
 priority_queue.h
 priority_queue 使用
 ```cpp
-大根堆：priority_queue<typename,vector<typename>,use_bigger_root> q;
-小根堆：priority_queue<typename,vector<typename>,use_lower_root> q;
+大根堆：priority_queue<typename,vector<typename>(内部数组使用，需支持push_back和pop_back),use_bigger_root> q;
+小根堆：priority_queue<typename,vector<typename>(内部数组使用，需支持push_back和pop_back),use_lower_root> q;
 ```
 priority_queue函数及指针（需重载大于运算符）:
 ```cpp
