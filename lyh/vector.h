@@ -47,10 +47,10 @@ namespace lyh
 				if(idx==len-1)
 				{
 					pp=new tn[len];
-					memcpy(pp,p,sizeof(tn[len]));
+					memcpy(pp,p,sizeof(tn)*len);
 					delete[] p;
 					p=new tn[len*2];
-					memcpy(p,pp,sizeof(tn[len]));
+					memcpy(p,pp,sizeof(tn)*len);
 					len*=2;
 					delete[] pp;
 				}
@@ -62,10 +62,10 @@ namespace lyh
 				if(idx<=len/4&&len/4>1)
 				{
 					pp=new tn[len/4];
-					memcpy(pp,p,sizeof(tn[len/4]));
+					memcpy(pp,p,sizeof(tn)*(len/4));
 					delete[] p;
 					p=new tn[len/2];
-					memcpy(p,pp,sizeof(tn[len/4]));
+					memcpy(p,pp,sizeof(tn)*(len/4));
 					len/=2;
 					delete[] pp;
 				}
@@ -74,15 +74,15 @@ namespace lyh
 			bool erase(unsigned long long x)
 			{
 				if(idx==-1||x>idx) return false;
-				memcpy(p+x,p+x+1,sizeof(tn[idx-x]));
+				memcpy(p+x,p+x+1,sizeof(tn)*(idx-x));
 				idx--;
 				if(idx<=len/4&&len/4>1)
 				{
 					pp=new tn[len/4];
-					memcpy(pp,p,sizeof(tn[len/4]));
+					memcpy(pp,p,sizeof(tn)*(len/4));
 					delete[] p;
 					p=new tn[len/2];
-					memcpy(p,pp,sizeof(tn[len/4]));
+					memcpy(p,pp,sizeof(tn)*(len/4));
 					len/=2;
 					delete[] pp;
 				}
